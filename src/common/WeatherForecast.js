@@ -55,7 +55,7 @@ const WeatherForecast = () => {
                             <div key={day.date} className="forecast-card">
                                 <table>
                                     <thead>
-                                        <td colSpan={2} className='table-date'><b>Date:</b> {new Date(day.date).toLocaleDateString()}</td>
+                                        <td colSpan={2} className='table-date'><b>Date:</b> {new Date(day.date).toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' })}</td>
                                     </thead>
                                     <tbody>
                                         <tr>
