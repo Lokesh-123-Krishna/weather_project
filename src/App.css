@@ -1,0 +1,114 @@
+/* Add this to your CSS file */
+
+/* Responsive styles for header */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsive styles for search input and button */
+.header input,
+.header button {
+  margin-top: 10px;
+}
+
+/* Responsive styles for h2 */
+h2 {
+  text-align: center;
+}
+
+/* Responsive styles for loader */
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; /* Adjust the height as needed */
+  margin-bottom: 20px;
+}
+
+/* Responsive styles for error message */
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsive styles for forecast container */
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Responsive styles for forecast card */
+.forecast-card {
+  width: calc(20% - 20px); /* Adjust the width and margin as needed */
+  margin: 10px;
+}
+
+/* Responsive styles for table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd; /* Default border style */
+  padding: 8px;
+  text-align: center;
+}
+
+/* Additional styling for table */
+.table-date {
+  background-color: #ffa5008c;
+}
+
+.table-bg-grey {
+  background-color: #b5b0b0;
+}
+
+.orange-color {
+  color: #ffa5008c;
+}
+
+.loader > p {
+  color: #ffa5008c;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Styles for search input */
+.search-textbox {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ffa5008c;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+/* Styles for search button */
+.search-button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ffa5008c;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: orange; /* Button background color */
+  color: #fff; /* Button text color */
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #2980b9; /* Button background color on hover */
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  .forecast-card {
+    width: calc(100% - 20px); /* Adjust the width and margin as needed for smaller screens */
+  }
+}
